@@ -1,17 +1,22 @@
 function digitConverter(dig) {
+    let f = 'I'; //first
+    let m = 'V'; //middle
+    let l = 'X'; //last
     let output = '';
+
     if (dig <= 3) {
-        output += 'I'.repeat(dig);
+        output += f.repeat(dig);
     } else if (dig === 4) {
-        output = 'I' + 'V';
+        output = f + m;
     } else if (dig === 5) {
-        output = 'V';
+        output = m;
     } else if (dig <= 8) {
-        output = 'V';
-        output += 'I'.repeat(dig - 5);
+        output = m;
+        output += f.repeat(dig - 5);
     } else if (dig === 9) {
-        output = 'I' + 'X';
+        output = f + l;
     }
+
     return output;
 }
 module.exports.digitConverter = digitConverter;
