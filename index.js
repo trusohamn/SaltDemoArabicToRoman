@@ -1,9 +1,6 @@
 function digitConverter(dig, digIndex) {
     let f, m, l;
-    const signes = 'IVXLCDM';
-    f = signes.charAt(digIndex * 2 + 0);
-    m = signes.charAt(digIndex * 2 + 1);
-    l = signes.charAt(digIndex * 2 + 2);
+    [f, m, l] = 'IVXLCDM'.split('').splice(digitIndex * 2 + 0, digitIndex * 2 + 3);
 
     let output = '';
 
