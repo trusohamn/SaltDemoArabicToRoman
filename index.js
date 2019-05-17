@@ -1,7 +1,7 @@
 function digitConverter(dig) {
-    let f = 'I'; //first
-    let m = 'V'; //middle
-    let l = 'X'; //last
+    let f = 'X'; //first
+    let m = 'L'; //middle
+    let l = 'D'; //last
     let output = '';
 
     if (dig <= 3) {
