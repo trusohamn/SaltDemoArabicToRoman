@@ -1,31 +1,9 @@
 function digitConverter(dig, digIndex) {
     let f, m, l;
-    switch (digIndex) {
-        case 0 : {
-            f='I';
-            m='V';
-            l='X';
-            break;
-        }
-        case 1 :{
-            f='X';
-            m='L';
-            l='C';
-            break;
-        }
-        case 2 :{
-            f='C';
-            m='D';
-            l='M';
-            break;
-        }
-        case 3 :{
-            f='M';
-            m='';
-            l='';
-            break;
-        }
-    }
+    const signes = 'IVXLCDM';
+    f = signes.charAt(digIndex * 2 + 0);
+    m = signes.charAt(digIndex * 2 + 1);
+    l = signes.charAt(digIndex * 2 + 2);
 
     let output = '';
 
