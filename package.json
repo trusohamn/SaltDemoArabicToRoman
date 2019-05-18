@@ -1,0 +1,22 @@
+{
+  "name": "saltdemoarabictoroman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trusohamn/SaltDemoArabicToRoman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trusohamn/SaltDemoArabicToRoman/issues"
+  },
+  "homepage": "https://github.com/trusohamn/SaltDemoArabicToRoman#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
